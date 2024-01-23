@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Driving Lessons - Humble-Uni Driving Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+</head>
+<body>
+    
+  <div class="social-icons-container">
+    <a href="https://www.facebook.com/yourpage" target="_blank" title="Facebook" class="mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+    <a href="https://twitter.com/yourpage" target="_blank" title="Twitter" class="mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://www.linkedin.com/company/yourpage" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in fa-2x"></i></a>
+</div>
+
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" width="40" height="40" class="mr-2">
+          <p>Humble-Uni Driving Academy</p> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="btn btn-primary" href="bookings.html">Bookings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+<!-- Booking Section -->
+<section id="booking" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h2>Book Your Driving Course</h2>
+              <p>Choose your preferred driving course and package below:</p>
+              <form action="submit_booking.php" method="POST">
+                  <div class="form-group">
+                      <label for="courseSelect">Select Course</label>
+                      <select class="form-control" id="courseSelect" name="course">
+                          <option value="Learners">Learners License</option>
+                          <option value="code8">Code 8 Driving Course</option>
+                          <option value="code10">Code 10 Driving Course</option>
+                          <option value="code14">Code 14 Driving Course</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="packageSelect">Select Package</label>
+                      <select class="form-control" id="packageSelect" name="package">
+                          <!-- Options for packages based on the selected course -->
+                          <!-- Add options dynamically using JavaScript or PHP -->
+                          <!-- For example, if Code 8 course is selected, display relevant packages -->
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="nameInput">Your Name</label>
+                      <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                      <label for="emailInput">Your Email</label>
+                      <input type="email" class="form-control" id="emailInput" name="email" placeholder="Enter your email">
+                  </div>
+                  <!-- Other form fields (phone number, date selection, etc.) can be added -->
+                  <button type="submit" class="btn btn-primary">Book Now</button>
+              </form>
+          </div>
+          <div class="col-md-6">
+            <img src="images/lady_Instructor.jpg" id="courseImage" class="img-fluid" alt="Course Image">
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="faqs.html" class="text-light">FAQs</a></li>
+                  <li><a href="fun_stuff.html" class="text-light">Fun Stuff!</a></li>
+                  <li><a href="blog.html" class="text-light">Blog/News</a></li>
+                  <!-- Add more relevant links -->
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>123 Main Street<br> Cosmo City, Gauteng<br> South Africa</p>
+              <p>Email: info@humbleuni.com<br> Phone: +123456789</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Connect with Us</h5>
+              <!-- Add social media icons or links if available -->
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                  <!-- Add more social media icons -->
+              </ul>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2023 Humble-Uni Driving Academy. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and other Scripts -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Your custom JS scripts -->
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+<script>
+  // Define packages for different courses
+  const coursePackages = {
+    code8: ["Basic Package", "Intermediate Package", "Advanced Package"],
+    code10: ["Standard Package", "Premium Package", "Deluxe Package"],
+    code14: ["Truck Basics", "Heavy Vehicle Training", "Specialized Handling"],
+    Learners: ["Basic", "Intermediate", "Advanced"]
+  };
+
+  // Function to update package options based on the selected course
+  function updatePackages() {
+    const courseSelect = document.getElementById("courseSelect");
+    const packageSelect = document.getElementById("packageSelect");
+    const selectedCourse = courseSelect.value;
+
+    // Clear current options in the package dropdown
+    packageSelect.innerHTML = '';
+
+    // Get relevant packages for the selected course
+    const packages = coursePackages[selectedCourse];
+
+    // Add options for packages
+    packages.forEach((package) => {
+      const option = document.createElement('option');
+      option.textContent = package;
+      packageSelect.appendChild(option);
+    });
+  }
+
+  // Add event listener to course selection change
+  document.getElementById("courseSelect").addEventListener("change", updatePackages);
+
+  // Initialize packages based on default course selection
+  updatePackages();
+</script>
+
+<script>
+  // Function to change the image based on the selected course
+  function changeCourseImage() {
+      const courseSelect = document.getElementById("courseSelect");
+      const courseImage = document.getElementById("courseImage");
+      const selectedCourse = courseSelect.value;
+
+      // Define images for different courses
+      const courseImages = {
+          Learners: "images/L_plate.jpg",
+          code8: "images/code8.webp",
+          code10: "images/Code-10-Drivers.webp",
+          code14: "images/Code 14.jpg"
+          // Add more images for other courses as needed
+      };
+
+      // Set the image source based on the selected course
+      courseImage.src = courseImages[selectedCourse] || "default-image.jpg";
+      courseImage.alt = selectedCourse + " Image"; // Set alt text based on course
+  }
+
+  // Add event listener to course selection change
+  document.getElementById("courseSelect").addEventListener("change", changeCourseImage);
+
+  // Initialize image based on the default selected course
+  changeCourseImage();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,846 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+/* The Home Page */
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Style the logo to align properly */
+.navbar-brand img {
+  margin-right: 5px; /* Adjust the space between logo and text */
+  vertical-align: middle; /* Align the logo vertically */
+}
+
+
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out; /* Apply a smooth transition */
+}
+
+/* Rotate the logo on hover */
+.navbar-brand img:hover {
+  transform: rotate(360deg);
+}
+
+
+
+/* Style the toggler icon color */
+.navbar-toggler-icon {
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Change toggler icon color on hover */
+
+ /* Custom Carousel Section */
+ .custom-carousel-section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+  
+}
+
+/* Custom Carousel Card */
+.custom-carousel-card {
+  border: 0;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, .87);
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+/* Custom Carousel Images */
+.custom-carousel-card img {
+  border-radius: 6px;
+}
+
+/* Custom Carousel Indicators */
+.custom-carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+/* Custom Carousel Items */
+.custom-carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100% !important;
+  transition: transform .6s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.custom-carousel-item.active {
+  display: block;
+}
+
+/* Custom Carousel Caption */
+.custom-carousel-caption {
+  padding-bottom: 45px;
+}
+
+.custom-carousel-caption .material-icons {
+  position: relative;
+  top: 5px;
+}
+
+/* Custom Carousel Control Icons */
+.custom-carousel-control-prev .material-icons,
+.custom-carousel-control-next .material-icons {
+  z-index: 5;
+  display: inline-block;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  margin: auto;
+}
+.homsec{
+  background-color: #565656;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.background-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensure the background image covers the entire container */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the background image */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  text-align: center;
+  padding: 20px;
+}
+.homsec h3, p {
+  color: white;
+}
+
+
+ /* Increase font size, make it bold, and use a unique font */
+ .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Your Unique Font', sans-serif; /* Replace 'Your Unique Font' with your chosen font */
+  margin-right: 20px; /* Add spacing between links */
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Transparent button with rounded corners */
+.navbar-nav .btn-primary {
+  background-color: transparent;
+  color: #00493C; /* Text color same as links */
+  text-transform: uppercase;
+  border: 2px solid #00493C;
+  border-radius: 20px; /* Rounded corners */
+  padding: 6px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Your Unique Font', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem; /* Adjust padding to create space between links */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition on hover */
+}
+
+
+
+.navbar-nav .active > .nav-link {
+  border-bottom: 2px solid #00493C; /* Underline active link */
+  color: #00493C; /* Change color for active link */
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-brand {
+display: flex;
+align-items: center;
+}
+
+.navbar-brand p {
+font-family: 'Your Unique Font', sans-serif;
+font-size: 18px;
+font-weight: bold;
+margin-top: 18px; /* Adjust spacing between logo and text */
+color: gray; /* Change color of the text */
+text-shadow: 20px;
+text-transform: uppercase;
+
+
+}
+
+    .social-icons-container {
+ 
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        background: hsla(168, 100%, 20%, 1);
+
+        background: linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        background: -moz-linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        background: -webkit-linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#006550", endColorstr="#0A6B56", GradientType=1 );
+    }
+
+    .social-icons-container a {
+        color: white;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+      padding-top: 100px; /* Adjust as needed */
+      background-image: url('Untitled\ design.png');
+      padding-top: 100px; /* Adjust as needed */
+      
+      background-size: cover;
+    background-position: center;
+    height: 50vh; /* Full viewport height */
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-title {
+      font-size: 3em;
+      text-transform: uppercase;
+      display: inline-block;
+      background: hsla(168, 100%, 20%, 1);
+
+        background: linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        background: -moz-linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        background: -webkit-linear-gradient(0deg, hsla(168, 100%, 20%, 1) 0%, hsla(167, 83%, 23%, 1) 0%, hsla(167, 71%, 26%, 1) 0%, hsla(167, 27%, 47%, 1) 51%, hsla(0, 0%, 94%, 1) 100%);
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#006550", endColorstr="#0A6B56", GradientType=1 );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 30px;
+      margin-left: -2oo;
+    }
+
+    .header-text {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .cat-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .btn-cat {
+      border-radius: 20px;
+      color: #00493C;
+      background-color: transparent;
+      border: 2px solid #00493C;
+      transition: color 0.3s, background-color 0.3s;
+    }
+  
+    .btn-cat:hover {
+      color: #fff;
+      background-color: #00493C;
+    }
+  .request_call p, ul, li{
+    color: black;
+    font-size: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home {
+  /* Your Home Page section styles */
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*about Section*/
+#about-us {
+  /* Your About Us section styles */
+  padding: 80px 0;
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.about-section {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+#services {
+  /* Your Services section styles */
+  padding: 80px 0;
+}
+
+.card {
+  /* Your card styles */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+#contact-us {
+  /* Your Contact Us section styles */
+  padding: 80px 0;
+}
+
+.form-group {
+  /* Your form group styles */
+  margin-bottom: 20px;
+}
+
+iframe {
+  /* Your map styles */
+  border: none;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+#booking-form {
+  /* Your Booking Form section styles */
+  padding: 80px 0;
+}
+
+.form-group {
+  /* Your form group styles */
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+#faqs {
+  /* Your FAQs section styles */
+  padding: 80px 0;
+}
+
+.card {
+  /* Your card styles */
+  margin-bottom: 15px;
+}
+
+
+
+
+#blog-news {
+  /* Your Blog/News section styles */
+  padding: 80px 0;
+}
+
+.card {
+  /* Your card styles */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-img-top {
+  /* Your card image styles */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  /* Your card title styles */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  /* Your card text styles */
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom CSS for blog grid layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd; /* Example border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.45rem; /* Adjust title size */
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: #555; /* Example text color */
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.embed-responsive {
+  margin-top: 20px;
+}
+
+/* Testimonial Cards Styling */
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-text {
+  font-style: italic;
+  color: #555;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 0.75rem 1.25rem;
+  text-align: right;
+}
+
+/* User Comment Form Styling */
+form {
+  margin-top: 30px;
+}
+
+form textarea, form input {
+  margin-bottom: 15px;
+}
+
+
+
+/* Safe Driving Scenarios Styling */
+#safe-driving-scenarios h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.before-after {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.caption p {
+  margin: 0;
+}
+
+
+/* Additional Custom CSS Styles */
+/* Add these styles to your existing styles.css file */
+
+/* Blog Grid Styling */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #E8E8E8;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Accordion Styling */
+
+
+.card-header button {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Testimonial Cards Styling */
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 0.75rem 1.25rem;
+  text-align: right;
+}
+
+/* User Comment Form Styling */
+form {
+  margin-top: 30px;
+}
+
+form textarea, form input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 100px;
+}
+
+/* Safe Driving Scenarios Styling */
+.before-after {
+  position: relative;
+}
+
+.before-after img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* User Engagement Section Styling */
+#testimonials {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+#testimonials .container {
+  max-width: 1100px;
+}
+
+#testimonials h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-footer small {
+  font-style: italic;
+}
+.card-img-top {
+  max-width: 100%; /* Adjust maximum width */
+  height: auto;
+  align-items: center;
+}
+.embed-responsive-16by9 iframe {
+  width: 100%; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+}
+.card .btn{
+  background-color:#00493C ;
+  color: #ccc;
+}
+.card-header{
+  background-color: #00493C;
+  
+  
+}
+.red-text {
+  color: black;
+  font-weight: bold;
+  
+}
+
+.black-text {
+  color: black;
+
+}
+
+.text-center{
+  color: #006B5A;
+  font-weight: bold;
+}
+
+.news-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+}
+.news-section{
+  background-color: #565656;
+}
+.news-section h2{
+  color: white;
+}
+
+.road-signs{
+  background-color: #565656 ;
+}
+.road-signs h2{
+  color: white;
+  text-transform: uppercase;
+}
+
+.owl-prev, .owl-next {
+  font-size: 40px !important;
+  color: white;
+}
+.owl-prev span, .owl-next span {
+  font-size: 40px !important;
+  color: white;
+}
+
+.road-sign-img {
+  width: 100%;
+  height: auto;
+}
+.road-sign-text {
+  text-align: center;
+  color: white;
+}
+.trans--grow{
+  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  transition: width 1s  ease-out;
+  width : 0%;
+}
+.grow{
+  width:100%;
+}
+.hr1{
+  margin-left:0;
+}
+.hr2{
+  margin-right:0;
+}
+hr{
+  margin-top: 20px;
+  padding: 2px 0;
+  border: none;
+  background-color: #FECC17;
+  letter-spacing: 5px;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
